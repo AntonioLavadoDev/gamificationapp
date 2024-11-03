@@ -1,0 +1,84 @@
+# Node modules y paquetes
+node_modules/
+dist/
+
+# Maven y archivos de construcción
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Archivos de configuración sensibles
+.env
+*.env
+application.properties
+application.yml
+application-*.properties
+application-*.yml
+
+# Archivos de Maven y configuración de empaquetado
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Archivos generados por STS (Spring Tool Suite)
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+# Archivos de log y depuración
+*.log
+logs/
+debug.log
+
+# Archivos de compilación y temporales
+*.class
+*.jar
+*.war
+*.ear
+*.db
+.DS_Store
+
+# Información de credenciales y de seguridad
+*.p12
+*.pem
+*.key
+*.crt
+
+# Archivos de configuración específicos del sistema operativo
+Thumbs.db
+ehthumbs.db
+.DS_Store
+*.swp
+._*
+
+# Archivos de seguimiento de entorno y configuraciones de IDE
+*.bak
+*.swp
+*~
+
+# Otros archivos específicos de usuario
+*.user
+*.sublime-workspace
+
