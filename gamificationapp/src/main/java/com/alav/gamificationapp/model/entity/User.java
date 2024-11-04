@@ -41,6 +41,9 @@ public class User {
     @Column(nullable = false)
     private Integer currentLevel = 1;
 
+    @Column(nullable = false)
+    private Integer totalPoints=0;
+
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private Set<UserAchievement> achievements = new HashSet<>();
 }
