@@ -9,12 +9,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @Entity
+@Table(name = "user_achievements")
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserAchievement {
@@ -25,7 +27,7 @@ public class UserAchievement {
 
     // User who unlocked the achievement
     @ManyToOne
-    @JoinColumn(name = "achievement_id", nullable = false)
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     // Achievement unlocked by the user
